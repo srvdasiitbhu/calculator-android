@@ -1,5 +1,9 @@
 package com.example.mycalculator
 
+/**
+ * A Simple Calculator App
+ */
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -34,6 +38,11 @@ class MainActivity : AppCompatActivity() {
             result.setOnClickListener { calculate(operation) }
         }
     }
+
+    /**
+     * Function to calculate '+','-','*','/' of two numbers entered by user in the app
+     * @param operation as selected by the user
+     */
 
     private fun calculate(operation: String ) {
 
