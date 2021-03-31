@@ -62,9 +62,13 @@ class MainActivity : AppCompatActivity() {
                 resultNo.text = res.toString()
             }
             "/" -> {
-                var res: Int =
-                        firstnumber.text.toString().toInt() / secondnumber.text.toString().toInt()
-                resultNo.text = res.toString()
+                if (secondnumber.text.toString().toInt() != 0) {
+                    var res: Int =
+                            firstnumber.text.toString().toInt() / secondnumber.text.toString().toInt()
+                    resultNo.text = res.toString()
+                }
+                else
+                    resultNo.text = "Cannot be divided by 0"
             }
             "*" -> {
                 var res: Int =
